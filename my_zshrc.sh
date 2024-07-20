@@ -13,7 +13,7 @@ alias hls=' history | less'
 
 
 ### fzf
-source <(fzf --zsh)     # enable fzf
+source <(fzf --zsh)
 
 
 
