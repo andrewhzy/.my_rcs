@@ -12,14 +12,29 @@ alias hls=' history | less'
 
 
 
+### common alias
+alias lla='ll -a'
+alias lessS='less -S'
+alias sls='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g" | less -R'
+
+
+
 ### fzf
 source <(fzf --zsh)
 
 
 
 ### kubectl
-alias k='kubectl'
-alias kg='kubectl get'
+alias k='   kubectl'
+alias kg='  kubectl get'
+kcd() {
+  if [ -z "$1" ]; then
+    echo "Usage: kcd <namespace>"
+  else
+    kubectl config set-context --current --namespace="$1"
+    echo "Switched to namespace: $1"
+  fi
+}
 
 
 
