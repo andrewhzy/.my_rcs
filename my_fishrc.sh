@@ -40,8 +40,12 @@ alias gba 'git branch --all'
 alias gck 'git checkout'
 alias gst 'git status'
 
-alias gl 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short'
-alias gld 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --date-order'
+# alias gl 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short'
+# alias gld 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --date-order'
 
-alias gla 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --all'
-alias glad 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --all --date-order'
+# alias gla 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --all'
+# alias glad 'git log --graph --decorate --pretty "%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date short --all --date-order'
+alias gl "git log --graph --decorate --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\" --date=short"
+alias gld "git log --graph --decorate --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\" --date=short --date-order"
+alias gla "git log --graph --decorate --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\" --date=short --all"
+alias glad "git log --graph --decorate --pretty=\"%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset\" --date=short --all --date-order"
